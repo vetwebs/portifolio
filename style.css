@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonte/Roboto-Regular.ttf);
+}
+:root{
+    --fonte-principal: Roboto;
+}
+body{
+    font-family: var(--fonte-principal);
+
+}
+/****************Cabeçalho*/
+header{
+    background-color: rgb(216, 180, 134);
+    height: 100%;
+    width: 18%;
+}
+.cabeçalho__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    
+}
+/*Redes Sociais*/
+.icone-redes-sociais img{
+    padding: 10px;
+}
+/*Habilidades*/
+.container__habilidades h2, .idioma__container h2{
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+/****************Apresentação*/
+.container__apresentação{
+    margin: 0 0 0 18%;
+    text-align: center;
+    background-color: rgb(245, 243, 240);
+}
+.container__apresentação p{
+    padding: 10px;
+}
+/*************Projetos*/
+.projetos__container{
+    margin: 10px 0 0 18%;
+    text-align: center;
+}
+.slides__container{
+    width: 80%;
+    margin: 10px 0 0 20%;
+    text-align: center;
+    
+    
+}
+
+.container__projetos-imagens-slides p{
+    padding: 5px;
+    
+}
+/*Configuração Slide*/
+.git-hub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px){
+    .cabeçalho__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        height: 15%;
+        width: 100%;
+        font-size: 13px;
+        position: fixed;
+        
+    }
+    .container__habilidades{
+       padding-bottom: 0;
+    
+    }
+    .idioma__container{
+        display: none;
+
+    }
+    .icone-redes-sociais img{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+    .imagem-ana img{
+        width: 80px;
+    }
+    .container__apresentação{
+        margin: 0;
+        padding-top: 32%;
+      
+    }
+    .container-principal-projetos, .projetos__container{
+        margin: 10px 0 0 5%;
+    
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
