@@ -46,29 +46,90 @@ header{
 .container__apresentação p{
     padding: 10px;
 }
-/*************Projetos*/
-.projetos__container{
-    margin: 10px 0 0 18%;
+/*************Projetos********/
+/*Configuração Slide*/
+main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    height: 100vh;
     text-align: center;
+
 }
-.slides__container{
-    width: 80%;
-    margin: 10px 0 0 20%;
-    text-align: center;
-    
-    
+main a{
+    text-decoration: none;
+    background: linear-gradient(rgb(231, 224, 224), rgb(165, 134, 134));
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.slider{
+    background-color: rgba(227, 230, 233, 0.473);
+    padding: 0 30px;
+    border-radius: 10px;
+    margin: 0 20%;
+    width: 430px;
+    height: 500px;
+    padding-top: 20px;
+    overflow: hidden;
+
+}
+.slides input{
+    display: none;
+}
+.slides{
+    width: 200%;
+    height: 400px;
+    display: flex;
+}
+.slides img{
+    width: 440px;
 }
 
-.container__projetos-imagens-slides p{
-    padding: 5px;
-    
-}
-/*Configuração Slide*/
-.git-hub{
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
+.manual-btn{
+    background: linear-gradient(rgb(136, 133, 133), rgb(165, 134, 134));
+    border-radius: 100%;
+    padding: 2px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background: rgb(15, 13, 13);
+
+}
+/*Manipulação dos checked*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -51.9%;
+}
+#radio3:checked ~ .first{
+    margin-left: -103%;
+}
+#radio4:checked ~ .first{
+    margin-left: -154%;
+}
+#radio5:checked ~ .first{
+    margin-left: -253%;
+}
+
+
+
+
+
 
 @media screen and (max-width: 900px){
     .cabeçalho__container{
@@ -96,6 +157,12 @@ header{
         padding: 5px;
         
     }
+    .projetos__container{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.801);
+        padding: 20px;
+        color: white;
+    }
     .imagem-ana img{
         width: 80px;
     }
@@ -104,17 +171,39 @@ header{
         padding-top: 32%;
       
     }
-    .container-principal-projetos, .projetos__container{
-        margin: 10px 0 0 5%;
+    .slider{
+        margin: 0 0 0 6%;
+        width: 420px;
+        height: 500px;
+        overflow: hidden;
     
     }
     
-
-
-
-
-
+    main{
+        margin: 0 0 0 -15%;
+        
+    }
+    .slides img{
+        width: 400px;
+    }
+    /*Manipulação dos checked*/
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -55%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -110%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -165%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -280%;
+    }
 }
+
 
 
 
