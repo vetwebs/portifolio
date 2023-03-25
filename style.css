@@ -15,7 +15,7 @@ body{
 }
 /****************Cabeçalho*/
 header{
-    background-color: rgb(216, 180, 134);
+    background: linear-gradient(rgb(216, 180, 134) 50% , rgb(233, 218, 169));
     height: 100%;
     width: 18%;
 }
@@ -46,13 +46,23 @@ header{
 .container__apresentação p{
     padding: 10px;
 }
+.projetos__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px;
+}
+.projetos__container h2{
+    padding-left: 15%;
+
+}
 /*************Projetos********/
 /*Configuração Slide*/
 main{
-    
+    background-color: antiquewhite;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20%;
     height: 100vh;
     text-align: center;
 
@@ -125,12 +135,72 @@ main a{
 #radio5:checked ~ .first{
     margin-left: -253%;
 }
+/****************Competências*******/
+.competências-principal-container{
+    padding-top: 50px;
+}
+.competencia-escrita-container{
+    margin-left: -60%;
 
+}
+.competencias__container{
+    margin-top: 10px;
+}
+.competencias__container div{
+    padding: 9px 0;
+    font-size: 18px;
+    margin-left: -60%;
+    display: flex;
+    align-items: center;
 
+}
+.competencias__container div img{
+    padding-left: 10px;
+}
+/****************Cursos*/
+.cursos-container{
+    margin-left: 35%;
+}
+.cursos-imagens{
+    display: flex;
+    align-items: center;
+}
+.alura-cursos{
+    margin-left: -15%;
+    color: rgb(10, 10, 136);
+}
+.cursos-feitos{
+    padding: 10px;
+    margin-left: -20%;
+}
+.cursos-feitos p{
+    padding: 8px;
+}
+/************Cursos estudano***/
+.container-cursos-atuais{
+    margin-left: -10%;
+}
+.icones-cursos-atuais{
+    display: flex;
+    flex-direction: column;
+}
+/*****************FOOTER*/
+footer{
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+    margin-left: 52%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer{
+    border: 1px solid rgb(240, 230, 230);
+    box-shadow: 10px 10px 10px rgb(199, 194, 194);
+    padding: 10px;
+    border-radius: 10px;
+}
 
-
-
-
+/************MEDIA 900PX MOBILE*/
 @media screen and (max-width: 900px){
     .cabeçalho__container{
         display: flex;
@@ -155,13 +225,14 @@ main a{
         display: flex;
         flex-direction: column;
         padding: 5px;
+        width: 25px;
         
     }
     .projetos__container{
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.801);
+        background-color: rgba(219, 213, 213, 0.801);
         padding: 20px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .imagem-ana img{
         width: 80px;
@@ -176,12 +247,10 @@ main a{
         width: 420px;
         height: 500px;
         overflow: hidden;
-    
     }
-    
     main{
-        margin: 0 0 0 -15%;
-        
+        margin: 0 0 20px -15%;
+        background-color: white;
     }
     .slides img{
         width: 400px;
@@ -202,8 +271,83 @@ main a{
     #radio5:checked ~ .first{
         margin-left: -280%;
     }
+    .competências-principal-container{
+        padding: 0;
+        margin-left: 60%;
+
+    }
+    .projetos__container h3{
+        display: none;
+    }
+    .projetos__container h2{
+        padding-left: 0;
+    }
+    .cursos-container{
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+    footer{
+        margin-left: 30%;
+        
+    }
+}
+/**************Media 393*/
+@media screen and (max-width: 393px){
+    hr{
+        margin-top: 70px;
+    }
+    .cursos-container{
+        margin-top: 40px;
+        margin-left: 20%;
+    }
 }
 
+
+
+
+
+/**************Media 376*/
+@media screen and (max-width: 376px){
+    /*Manipulação dos checked*/
+    #radio1:checked ~ .first{
+        margin-left: -3%;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -67%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -126%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -188%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -312%;
+    }
+    .competências-principal-container{
+        padding: 0;
+      
+    }
+    hr{
+        margin-top: 50px
+    }
+    .cursos-container{
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+
+}
+/***************MOBILE 360*/
+@media screen and (max-width: 360px){
+    hr{
+        margin-top: 40%;
+    }
+    .cursos-container{
+        margin-top: 10px;
+        margin-left: 20%;
+    }
+
+}
 
 
 
