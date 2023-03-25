@@ -303,9 +303,6 @@ footer{
 }
 
 
-
-
-
 /**************Media 376*/
 @media screen and (max-width: 376px){
     /*Manipulação dos checked*/
@@ -340,10 +337,10 @@ footer{
 /***************MOBILE 360*/
 @media screen and (max-width: 360px){
     hr{
-        margin-top: 40%;
+        margin-top: 50%;
     }
     .cursos-container{
-        margin-top: 10px;
+        margin-top: 50px;
         margin-left: 20%;
     }
 
